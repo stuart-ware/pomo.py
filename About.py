@@ -1,3 +1,5 @@
+from PySide6.QtWidgets import QWidget, QApplication, QLabel, QPushButton, QVBoxLayout
+from PySide6 import QtCore, QtGui
 class About(QWidget):
     def __init__(self):
         super().__init__()

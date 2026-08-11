@@ -2,6 +2,7 @@
 from PySide6.QtWidgets import QWidget, QApplication, QLabel, QPushButton, QVBoxLayout
 from PySide6 import QtCore, QtGui
 import sys
+from About import About
 
 class Timer(QWidget):
     def __init__(self):
