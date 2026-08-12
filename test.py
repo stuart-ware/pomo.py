@@ -1,6 +1,7 @@
 import sys
-from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
-from PySide6.QtGui import QIcon, QAction
+
+from PySide6.QtGui import QAction, QIcon
+from PySide6.QtWidgets import QApplication, QMenu, QSystemTrayIcon
 
 app: QApplication = QApplication(sys.argv)
 app.setQuitOnLastWindowClosed(False)  # para que no se cierre al cerrar ventanas
