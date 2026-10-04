@@ -1,13 +1,12 @@
 # stuart.software - pomo.py 0.2.0 
-from PySide6.QtWidgets import QWidget, QApplication, QLabel, QPushButton, QVBoxLayout
+from PySide6.QtWidgets import QWidget, QLabel, QPushButton
 from PySide6 import QtCore, QtGui
-import sys
 
 class About(QWidget):
     def __init__(self):
         super().__init__()
         
-        self.font = QtGui.QFont("JetBrainsMono Nerd Font", 8)
+        self.font = QtGui.QFont("GohuFont 11 Nerd Font", 8)
             
         self.setFixedSize(QtCore.QSize(300,200))
         self.setFont(self.font)
@@ -169,12 +168,3 @@ class WindowCountdown(QWidget):
     @QtCore.Slot()
     def notifications(self):
         pass
-
-
-# main 
-
-if __name__ == "__main__":
-    app = QApplication([])
-    window = WindowCountdown()
-    window.show()
-    sys.exit(app.exec())

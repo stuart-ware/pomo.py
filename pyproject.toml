@@ -1,0 +1,19 @@
+[project]
+name = "pomo-py"
+version = "0.3.0"
+description = "pomodoro app written in python and qt6"
+readme = "README.md"
+authors = [
+    { name = "Anthony Stuart", email = "stuartdeveloper@proton.me" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pyside6>=6.11.2",
+]
+
+[project.scripts]
+pomo-py = "pomo_py:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
